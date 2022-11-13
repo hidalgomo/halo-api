@@ -1,30 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thida4589\\Desktop\\HALO\\HALOapi\\build.proj": {}
+    "/Users/moiseshidalgo/Desktop/halo-api/build.proj": {}
   },
   "projects": {
-    "C:\\Users\\thida4589\\Desktop\\HALO\\HALOapi\\build.proj": {
+    "/Users/moiseshidalgo/Desktop/halo-api/build.proj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thida4589\\Desktop\\HALO\\HALOapi\\build.proj",
+        "projectUniqueName": "/Users/moiseshidalgo/Desktop/halo-api/build.proj",
         "projectName": "build",
-        "projectPath": "C:\\Users\\thida4589\\Desktop\\HALO\\HALOapi\\build.proj",
-        "packagesPath": "C:\\Users\\thida4589\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thida4589\\Desktop\\HALO\\HALOapi\\obj\\",
+        "projectPath": "/Users/moiseshidalgo/Desktop/halo-api/build.proj",
+        "packagesPath": "/Users/moiseshidalgo/.nuget/packages/",
+        "outputPath": "/Users/moiseshidalgo/Desktop/halo-api/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\thida4589\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/moiseshidalgo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net45"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,7 +32,15 @@
       "frameworks": {
         "net45": {
           "targetAlias": "net45",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.2, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

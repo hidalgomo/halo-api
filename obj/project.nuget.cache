@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "4hzyWAFPQqUA53ORqbSi8oCZcSPehRMKeUEldLSbQ5gsC+I2UeHvyQsStcF4UDPqUoNmNIWRFeNKRpYaDCnkjg==",
+  "dgSpecHash": "cslCCAaTO4o+w0joM38e1Xdorq7vjci3b/9WTA9u/50VJxs6LQWDuTw2Vqfcbp2bf2TA1BJ11gs2zCRibepOcg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\thida4589\\Desktop\\HALO\\HALOapi\\build.proj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/moiseshidalgo/Desktop/halo-api/build.proj",
+  "expectedPackageFiles": [
+    "/Users/moiseshidalgo/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.2/microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "/Users/moiseshidalgo/.nuget/packages/microsoft.netframework.referenceassemblies.net45/1.0.2/microsoft.netframework.referenceassemblies.net45.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

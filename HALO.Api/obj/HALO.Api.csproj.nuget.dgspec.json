@@ -1,30 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\thida4589\\Desktop\\HALO\\HALOapi\\HALO.Api\\HALO.Api.csproj": {}
+    "/Users/moiseshidalgo/Desktop/halo-api/HALO.Api/HALO.Api.csproj": {}
   },
   "projects": {
-    "c:\\Users\\thida4589\\Desktop\\HALO\\HALOapi\\HALO.Api\\HALO.Api.csproj": {
+    "/Users/moiseshidalgo/Desktop/halo-api/HALO.Api/HALO.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\thida4589\\Desktop\\HALO\\HALOapi\\HALO.Api\\HALO.Api.csproj",
+        "projectUniqueName": "/Users/moiseshidalgo/Desktop/halo-api/HALO.Api/HALO.Api.csproj",
         "projectName": "HALO.Api",
-        "projectPath": "c:\\Users\\thida4589\\Desktop\\HALO\\HALOapi\\HALO.Api\\HALO.Api.csproj",
-        "packagesPath": "C:\\Users\\thida4589\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\thida4589\\Desktop\\HALO\\HALOapi\\HALO.Api\\obj\\",
+        "projectPath": "/Users/moiseshidalgo/Desktop/halo-api/HALO.Api/HALO.Api.csproj",
+        "packagesPath": "/Users/moiseshidalgo/.nuget/packages/",
+        "outputPath": "/Users/moiseshidalgo/Desktop/halo-api/HALO.Api/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\thida4589\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/moiseshidalgo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -62,10 +57,25 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -74,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }
