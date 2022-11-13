@@ -13,7 +13,7 @@ public class CarescasesControllerTest
     public async void GetCarescasesAsync_ReturnsNonEmptyCol()
     {
         int CAREiD = 10147852;
-        Mock<ICarescaseService> mockedService = new Mock<ICarescaseService>();
+        Mock<ICarescseService> mockedService = new Mock<ICarescaseService>();
         mockedService.Setup(x => x.GetCarescasesByCaresIdAsync(CAREiD)).ReturnsAsync(new Carescase[] { new Carescase() });
         CarescasesController controller = new CarescasesController(mockedService.Object);
         
