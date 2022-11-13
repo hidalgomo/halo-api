@@ -11,7 +11,7 @@ Metadata is data utilized by the HALO application to perform specific processes.
 {
     data: [
         [...metaData1],
-        [...metaData2].
+        [...metaData2],
         [...metaData3],
         [metaTitle1, metaTitle2, metaTitle3]
     ]
