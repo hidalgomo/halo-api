@@ -40,6 +40,7 @@ builder.Services.AddScoped<IHapscaseService, HapscaseService>();
 builder.Services.AddScoped<ICommentService, CommentService>();
 builder.Services.AddScoped<ICarescaseService, CarescaseService>();
 builder.Services.AddScoped<IOutreachService, OutreachService>();
+builder.Services.AddScoped<IClientInteractionService, ClientInteractionService>();
 
 builder.Services.AddDbContext<HALOdB>(options => options.UseSqlServer(      
     dbConnectionString,

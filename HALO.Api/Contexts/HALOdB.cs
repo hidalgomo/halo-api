@@ -12,6 +12,7 @@ public class HALOdB : DbContext
     public DbSet<CommentEntity> Comments { get; set; }
     public DbSet<CarescaseEntity> Carescases { get; set; }
     public DbSet<OutreachEntity> Outreaches { get; set; }
+    public DbSet<ClientInteractionEntity> ClientInteractions { get; set; }
 
     public HALOdB(DbContextOptions<HALOdB> options) : base( options )
     {
