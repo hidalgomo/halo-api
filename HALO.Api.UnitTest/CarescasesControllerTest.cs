@@ -7,19 +7,19 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HALO.UnitTest;
 
-public class CarescasesControllerTest
+public class CaresCasesControllerTest
 {
     [Fact]
-    public async void GetCarescasesAsync_ReturnsNonEmptyCol()
+    public async void GetCaresCasesAsync_ReturnsNonEmptyCol()
     {
         int CAREiD = 10147852;
-        Mock<ICarescaseService> mockedService = new Mock<ICarescaseService>();
-        mockedService.Setup(x => x.GetCarescasesByCaresIdAsync(CAREiD)).ReturnsAsync(new Carescase[] { new Carescase() });
-        CarescasesController controller = new CarescasesController(mockedService.Object);
+        Mock<ICaresCaseService> mockedService = new Mock<ICaresCaseService>();
+        mockedService.Setup(x => x.GetCaresCasesByCaresIdAsync(CAREiD)).ReturnsAsync(new CaresCase[] { new CaresCase() });
+        CaresCasesController controller = new CaresCasesController(mockedService.Object);
         
-        ActionResult<Collection<Carescase>> response = await controller.GetCarescasesAsync(CAREiD);
+        ActionResult<Collection<CaresCase>> response = await controller.GetCaresCasesAsync(CAREiD);
         OkObjectResult okObject = Assert.IsType<OkObjectResult>(response.Result);
-        Collection<Carescase> collection = (Collection<Carescase>) okObject.Value;
+        Collection<CaresCase> collection = (Collection<CaresCase>) okObject.Value;
 
         Assert.NotEmpty(collection.Data);
     }

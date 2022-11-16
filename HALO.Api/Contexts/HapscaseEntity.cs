@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace HALO.Api.Contexts;
 
 [Table("HAPSLeasing")]
-public partial class HapscaseEntity
+public partial class HapsCaseEntity
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

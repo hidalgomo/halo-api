@@ -1,10 +1,10 @@
 namespace HALO.Api.Models;
 
-public class Hapscase
+public class HapsCase : Case
 {
     public bool? IRSVerified { get; set; }
     public bool? LldEftInd { get; set; }
-
+    
     public decimal? PaymentAmount { get; set; }
     public decimal? HouseholdSizeMaxRent { get; set; }
     public decimal? SpecialSubsidy { get; set; }
@@ -23,9 +23,6 @@ public class Hapscase
     public DateTime? ModDte { get; set; }
     public DateTime? PaymentFrom { get; set; }
     public DateTime? PaymentTo { get; set; }
-
-    public string PaNumber { get; set; }
-    public string PaSuffix { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string ApartmentNumber { get; set; }
@@ -72,5 +69,4 @@ public class Hapscase
     public string Status { get; set; }
     public string HpdMidInc { get; set; }
     public string PayeeSourceId { get; set; }
-    public string CaseNumber { get; set; }
 }

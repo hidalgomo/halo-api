@@ -6,20 +6,20 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HALO.Api.Services;
 
-public class CarescaseService : ICarescaseService
+public class CaresCaseService : ICaresCaseService
 {
     private readonly HALOdB _database;
 
-    public CarescaseService(HALOdB database)
+    public CaresCaseService(HALOdB database)
     {
         this._database = database;
     }
 
-    public async Task<IList<Carescase>> GetCarescasesByCaresIdAsync(int CaresId)
+    public async Task<IList<CaresCase>> GetCaresCasesByCaresIdAsync(int CaresId)
     {
-        return await this._database.Carescases.Where(x => x.CaseId == CaresId && x.HocCaresId == CaresId)
+        return await this._database.CaresCases.Where(x => x.CaseId == CaresId && x.HocCaresId == CaresId)
             .OrderByDescending(x => x.CheckOutDate)
-            .Select(x => new Carescase
+            .Select(x => new CaresCase
             {
                 CaseNumber = x.CaseNumber.ToString(),
                 CaseType = x.CaseType,

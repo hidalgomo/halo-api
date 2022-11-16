@@ -5,21 +5,21 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HALO.Api.Services;
 
-public class HapscaseService : IHapscaseService
+public class HapsCaseService : IHapsCaseService
 {
     private readonly HALOdB _database;
 
-    public HapscaseService(HALOdB database)
+    public HapsCaseService(HALOdB database)
     {
         this._database = database;
     }
 
-    public async Task<Hapscase> GetHapscaseByPaNumberAsync(string PaNumber)
+    public async Task<HapsCase> GetHapsCaseByPaNumberAsync(string PaNumber)
     {
-        return await this._database.Hapscases
+        return await this._database.HapsCases
             .Where(x => x.PaNumber == PaNumber)
             .OrderByDescending(x => x.ModDate)
-            .Select(x => new Hapscase 
+            .Select(x => new HapsCase 
             {
                 PaNumber = x.PaNumber
             })

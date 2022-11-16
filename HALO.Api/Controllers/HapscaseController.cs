@@ -6,19 +6,19 @@ namespace HALO.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class HapscaseController : ControllerBase
+public class HapsCaseController : ControllerBase
 {
-    private readonly IHapscaseService _hapscaseService;
+    private readonly IHapsCaseService _hapsCaseService;
 
-    public HapscaseController(IHapscaseService hapscaseService)
+    public HapsCaseController(IHapsCaseService hapsCaseService)
     {
-        this._hapscaseService = hapscaseService;
+        this._hapsCaseService = hapsCaseService;
     }
 
-    [HttpGet("{PaNumber}", Name = nameof(GetHapscaseAsync))]
-    public async Task<ActionResult<Hapscase>> GetHapscaseAsync(string PaNumber)
+    [HttpGet("{PaNumber}", Name = nameof(GetHapsCaseAsync))]
+    public async Task<ActionResult<HapsCase>> GetHapsCaseAsync(string PaNumber)
     {
-        Hapscase hapscase = await this._hapscaseService.GetHapscaseByPaNumberAsync(PaNumber);
-        return Ok(hapscase);
+        HapsCase hapsCase = await this._hapsCaseService.GetHapsCaseByPaNumberAsync(PaNumber);
+        return Ok(hapsCase);
     }
 }

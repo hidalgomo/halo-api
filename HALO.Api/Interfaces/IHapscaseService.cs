@@ -2,7 +2,7 @@ using HALO.Api.Models;
 
 namespace HALO.Api.Interfaces;
 
-public interface IHapscaseService
+public interface IHapsCaseService
 {
-    Task<Hapscase> GetHapscaseByPaNumberAsync(string PaNumber);
+    Task<HapsCase> GetHapsCaseByPaNumberAsync(string PaNumber);
 }

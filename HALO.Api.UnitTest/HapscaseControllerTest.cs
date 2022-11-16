@@ -7,33 +7,33 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HALO.UnitTest;
 
-public class HapscaseControllerTest
+public class HapsCaseControllerTest
 {
     [Fact]
-    public async void GetHapscaseAsync_ReturnsHapscase()
+    public async void GetHapsCaseAsync_ReturnsHapscase()
     {
         string paNumber = "00006833716B";
-        Mock<IHapscaseService> mockedService = new Mock<IHapscaseService>();
-        mockedService.Setup(x => x.GetHapscaseByPaNumberAsync(paNumber)).ReturnsAsync(new Hapscase());
+        Mock<IHapsCaseService> mockedService = new Mock<IHapsCaseService>();
+        mockedService.Setup(x => x.GetHapsCaseByPaNumberAsync(paNumber)).ReturnsAsync(new HapsCase());
 
-        HapscaseController controller = new HapscaseController( mockedService.Object );
+        HapsCaseController controller = new HapsCaseController( mockedService.Object );
 
-        ActionResult<Hapscase> response = await controller.GetHapscaseAsync(paNumber);
+        ActionResult<HapsCase> response = await controller.GetHapsCaseAsync(paNumber);
         OkObjectResult okObject = Assert.IsType<OkObjectResult>(response.Result);
 
-        Assert.IsType<Hapscase>(okObject.Value);
+        Assert.IsType<HapsCase>(okObject.Value);
     }
 
     [Fact]
-    public async void GetHapscaseAsync_ReturnsNull()
+    public async void GetHapsCaseAsync_ReturnsNull()
     {
         string paNumber = "00006833716B";
-        Mock<IHapscaseService> mockedService = new Mock<IHapscaseService>();
-        mockedService.Setup(x => x.GetHapscaseByPaNumberAsync(paNumber)).ReturnsAsync((Hapscase) null);
+        Mock<IHapsCaseService> mockedService = new Mock<IHapsCaseService>();
+        mockedService.Setup(x => x.GetHapsCaseByPaNumberAsync(paNumber)).ReturnsAsync((HapsCase) null);
 
-        HapscaseController controller = new HapscaseController( mockedService.Object );
+        HapsCaseController controller = new HapsCaseController( mockedService.Object );
 
-        ActionResult<Hapscase> response = await controller.GetHapscaseAsync(paNumber);
+        ActionResult<HapsCase> response = await controller.GetHapsCaseAsync(paNumber);
         OkObjectResult okObject = Assert.IsType<OkObjectResult>(response.Result);
 
         Assert.Null(okObject.Value);

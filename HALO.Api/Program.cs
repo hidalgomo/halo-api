@@ -36,9 +36,9 @@ switch(environment.EnvironmentName)
 builder.Services.AddScoped<IMetadataService, MetadataService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IInteractionService, InteractionService>();
-builder.Services.AddScoped<IHapscaseService, HapscaseService>();
+builder.Services.AddScoped<IHapsCaseService, HapsCaseService>();
 builder.Services.AddScoped<ICommentService, CommentService>();
-builder.Services.AddScoped<ICarescaseService, CarescaseService>();
+builder.Services.AddScoped<ICaresCaseService, CaresCaseService>();
 builder.Services.AddScoped<IOutreachService, OutreachService>();
 builder.Services.AddScoped<IClientInteractionService, ClientInteractionService>();
 

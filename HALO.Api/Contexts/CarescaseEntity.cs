@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace HALO.Api.Contexts;
 
 [Table("Placement_Fct", Schema = "cares")]
-public partial class CarescaseEntity
+public partial class CaresCaseEntity
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

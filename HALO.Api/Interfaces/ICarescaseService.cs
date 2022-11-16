@@ -2,7 +2,7 @@ using HALO.Api.Models;
 
 namespace HALO.Api.Interfaces;
 
-public interface ICarescaseService
+public interface ICaresCaseService
 {
-    Task<IList<Carescase>> GetCarescasesByCaresIdAsync(int CaresId);
+    Task<IList<CaresCase>> GetCaresCasesByCaresIdAsync(int CaresId);
 }

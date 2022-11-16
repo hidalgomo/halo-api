@@ -6,21 +6,21 @@ namespace HALO.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class CarescasesController : ControllerBase
+public class CaresCasesController : ControllerBase
 {
-    private readonly ICarescaseService _carescaseService;
+    private readonly ICaresCaseService _caresCaseService;
 
-    public CarescasesController(ICarescaseService carescaseService)
+    public CaresCasesController(ICaresCaseService caresCaseService)
     {
-        this._carescaseService = carescaseService;
+        this._caresCaseService = caresCaseService;
     }
 
-    [HttpGet("{CareIds}", Name = nameof(GetCarescasesAsync))]
-    public async Task<ActionResult<Collection<Carescase>>> GetCarescasesAsync(int CaresId)
+    [HttpGet("{CareIds}", Name = nameof(GetCaresCasesAsync))]
+    public async Task<ActionResult<Collection<CaresCase>>> GetCaresCasesAsync(int CaresId)
     {
-        IList<Carescase> carescases = await this._carescaseService.GetCarescasesByCaresIdAsync( CaresId);
-        Collection<Carescase> collection = new Collection<Carescase>();
-        collection.Data = carescases.ToArray();
+        IList<CaresCase> caresCases = await this._caresCaseService.GetCaresCasesByCaresIdAsync( CaresId);
+        Collection<CaresCase> collection = new Collection<CaresCase>();
+        collection.Data = caresCases.ToArray();
 
         return Ok(collection);
     }
