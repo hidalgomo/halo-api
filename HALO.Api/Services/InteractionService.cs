@@ -1,4 +1,3 @@
-using HALO.Api.Models;
 using HALO.Api.Contexts;
 using HALO.Api.Interfaces;
 

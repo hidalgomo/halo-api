@@ -1,6 +1,5 @@
 using HALO.Api.Contexts;
 using HALO.Api.Interfaces;
-using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 
 namespace HALO.Api.Services;
