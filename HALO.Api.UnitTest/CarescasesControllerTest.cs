@@ -2,6 +2,7 @@ using Moq;
 using Xunit;
 using HALO.Api.Models;
 using HALO.Api.Interfaces;
+using HALO.Api.Models.Case;
 using HALO.Api.Controllers;
 using Microsoft.AspNetCore.Mvc;
 

@@ -1,7 +1,7 @@
 
-using HALO.Api.Models;
 using HALO.Api.Contexts;
 using HALO.Api.Interfaces;
+using HALO.Api.Models.Case;
 using Microsoft.EntityFrameworkCore;
 
 namespace HALO.Api.Services;

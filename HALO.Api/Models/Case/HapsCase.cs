@@ -1,6 +1,6 @@
-namespace HALO.Api.Models;
+namespace HALO.Api.Models.Case;
 
-public class HapsCase : Case
+public class HapsCase : BaseCase
 {
     public bool? IRSVerified { get; set; }
     public bool? LldEftInd { get; set; }

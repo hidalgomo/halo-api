@@ -1,6 +1,6 @@
-namespace HALO.Api.Models;
+namespace HALO.Api.Models.Case;
 
-public class CaresCase : Case
+public class CaresCase : BaseCase
 {
     public int? HocCaresId  { get; set; }
 

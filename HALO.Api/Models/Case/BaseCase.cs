@@ -1,6 +1,6 @@
-namespace HALO.Api.Models;
+namespace HALO.Api.Models.Case;
 
-public class Case
+public class BaseCase
 {
     public string PaNumber { get; set; }
     public string PaSuffix { get; set; }
