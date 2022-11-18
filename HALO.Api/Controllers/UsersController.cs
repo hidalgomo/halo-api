@@ -1,5 +1,6 @@
 using HALO.Api.Models;
 using HALO.Api.Interfaces;
+using HALO.Api.Models.Person;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HALO.Api.Controllers;

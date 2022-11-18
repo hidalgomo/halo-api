@@ -1,4 +1,4 @@
-using HALO.Api.Models;
+using HALO.Api.Models.Person;
 
 namespace HALO.Api.Interfaces;
 

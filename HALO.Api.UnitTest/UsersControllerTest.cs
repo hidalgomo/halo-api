@@ -3,6 +3,7 @@ using Xunit;
 using HALO.Api.Models;
 using HALO.Api.Interfaces;
 using HALO.Api.Controllers;
+using HALO.Api.Models.Person;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 

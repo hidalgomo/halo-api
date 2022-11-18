@@ -1,6 +1,6 @@
-namespace HALO.Api.Models;
+namespace HALO.Api.Models.Person;
 
-public class User : Person
+public class User : BasePerson
 {
     public int UserId { get; set; }
 
