@@ -12,7 +12,7 @@ public class HapsCaseControllerTest
     [Fact]
     public async void GetHapsCaseAsync_ReturnsHapscase()
     {
-        string paNumber = "00006833716B";
+        string paNumber = "03306833716B";
         Mock<IHapsCaseService> mockedService = new Mock<IHapsCaseService>();
         mockedService.Setup(x => x.GetHapsCaseByPaNumberAsync(paNumber)).ReturnsAsync(new HapsCase());
 
